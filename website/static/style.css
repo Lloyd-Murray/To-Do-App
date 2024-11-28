@@ -1,0 +1,40 @@
+body{
+    background-color: papayawhip;
+}
+
+.verticalLines {
+    width: 2px;
+    float: left;
+    height: 100vh;
+    margin-left: 35px;
+    border-left: 1px solid firebrick;
+    border-right: 1px solid firebrick;
+}
+
+.title {
+    text-indent: 20px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.todo {
+    border-bottom: 2px dotted steelblue;
+    text-indent: 20px;
+    padding-bottom: 10px;
+}
+
+.tasks {
+    border-bottom: 2px dotted steelblue;
+    text-indent: 20px;
+    padding: 10px;
+}
+
+.success {
+    margin-left: 20px;
+    color:forestgreen;
+}
+
+.error {
+    margin-left: 20px;
+    color: firebrick;
+}

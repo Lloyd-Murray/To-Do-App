@@ -2,7 +2,9 @@
 
 {% block content %}
 
-<div class="verticalLines"></div>
+<div class="vertical_lines"></div>
+
+<div class="offset">
 
 <h1 class="title">To Do List</h1>
 
@@ -20,6 +22,8 @@
     </div>
 </form>
 
+<div class="tasks"></div>
+
 {% for todo in todo_list %}
     <div class="tasks">
         <p>{{ todo.id }} : {{ todo.task }} : {{ todo.date }}</p>
@@ -28,8 +32,12 @@
         {% else %}
             <p style="color: forestgreen;">Task Complete. <a href="/update/{{ todo.id }}">Mark as incomplete?</a></p>
         {% endif %}
-        <p ><a href="/delete/{{ todo.id }}">Delete Task</a></p>
+        <p><a href="/delete/{{ todo.id }}">Delete Task</a></p>
     </div>
 {% endfor %}
+
+<p>&nbsp;</p>
+
+</div>
 
 {% endblock %}
